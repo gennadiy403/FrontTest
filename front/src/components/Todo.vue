@@ -34,7 +34,7 @@
     <p>
       По вопросам пишите в лс на моём круге или на gmail@uzere.name
 
-    
+
     <h2>Ссылки по Vue.js от шаблона, пусть тут лежат</h2>
     <h3>Essential Links</h3>
     <ul>
@@ -67,7 +67,10 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="stylus" scoped>
+table tr td {
+  border: solid 1px grey
+}
 .todo {
   width: 970px;
   margin: 0 auto;

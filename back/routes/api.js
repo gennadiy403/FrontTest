@@ -15,32 +15,38 @@ function toJSON (template, ...expressions) {
 router.get('/bracket/1', function (req, res, next) {
   res.json(toJSON`
     {
-      "teams": {
-        "1": {
+      "teams": [
+        {
+          "id": 1,
           "name": "Invictus Gaming",
           "img": "http://wiki.teamliquid.net/commons/images/a/a8/IGlogo_std.png"
         },
-        "2": {
+        {
+          "id": 2,
           "name": "Team Secret",
           "img": "http://wiki.teamliquid.net/commons/images/a/a7/Secretdotalogo_std.png"
         },
-        "3": {
+        {
+          "id": 3,
           "name": "Team Liquid",
           "img": "http://wiki.teamliquid.net/commons/images/c/cd/Liquid2017logo_std.png"
         },
-        "4": {
+        {
+          "id": 4,
           "name": "Virtus.pro",
           "img": "http://wiki.teamliquid.net/commons/images/e/e7/Virtuslogo_std.png"
         },
-        "5": {
+        {
+          "id": 5,
           "name": "Evil Geniuses",
           "img": "http://wiki.teamliquid.net/commons/images/2/28/Eglogo_std.png"
         },
-        "6": {
+        {
+          "id": 6,
           "name": "LGD.ForeverYoung",
           "img": "http://wiki.teamliquid.net/commons/images/1/12/Lgdfylogo_hd.png"
         }
-      },
+      ],
       "rounds": [
         {
           "name": "Quarterfinals",
@@ -71,72 +77,88 @@ router.get('/bracket/1', function (req, res, next) {
 router.get('/bracket/2', function (req, res, next) {
   res.json(toJSON`
     {
-      "teams": {
-        "1": {
+      "teams": [
+        {
+          "id": 1,
           "name": "Invictus Gaming",
           "img": "http://wiki.teamliquid.net/commons/images/a/a8/IGlogo_std.png"
         },
-        "2": {
+        {
+          "id": 2,
           "name": "mousesports",
           "img": "http://wiki.teamliquid.net/commons/images/d/dc/Mousesportslogo_std.png"
         },
-        "3": {
+        {
+          "id": 3,
           "name": "Team Liquid",
           "img": "http://wiki.teamliquid.net/commons/images/c/cd/Liquid2017logo_std.png"
         },
-        "4": {
+        {
+          "id": 4,
           "name": "Newbee",
           "img": "http://wiki.teamliquid.net/commons/images/b/b9/Newbeelogo_std.png"
         },
-        "5": {
+        {
+          "id": 5,
           "name": "Digital Chaos",
           "img": "http://wiki.teamliquid.net/commons/images/3/3f/Digitalchaoslogo_std.png"
         },
-        "6": {
+        {
+          "id": 6,
           "name": "Team VGJ",
           "img": "http://wiki.teamliquid.net/commons/images/7/70/Team_VG.J_logo_std.png"
         },
-        "7": {
+        {
+          "id": 7,
           "name": "Virtus.pro",
           "img": "http://wiki.teamliquid.net/commons/images/e/e7/Virtuslogo_std.png"
         },
-        "8": {
+        {
+          "id": 8,
           "name": "iG Vitality",
           "img": "http://wiki.teamliquid.net/commons/images/7/76/IGVlogo_std.png"
         },
-        "9": {
+        {
+          "id": 9,
           "name": "TNC Pro Team",
           "img": "http://wiki.teamliquid.net/commons/images/9/98/Tnclogo_std.png"
         },
-        "10": {
+        {
+          "id": 10,
           "name": "Team Faceless",
           "img": "http://wiki.teamliquid.net/commons/images/e/ea/Teamfacelesslogo_std.png"
         },
-        "11": {
+        {
+          "id": 11,
           "name": "OG",
           "img": "http://wiki.teamliquid.net/commons/images/a/a0/OGLogo_std.png"
         },
-        "12": {
+        {
+          "id": 12,
           "name": "Team Random",
           "img": "http://wiki.teamliquid.net/commons/images/4/40/Team_Random_logo_std.png"
         },
-        "13": {
+        {
+          "id": 13,
           "name": "Thunderbirds",
           "img": "http://wiki.teamliquid.net/commons/images/6/6e/Thunderbirdslogo_std.png"
         },
-        "14": {
+        {
+          "id": 14,
           "name": "Evil Geniuses",
           "img": "http://wiki.teamliquid.net/commons/images/2/28/Eglogo_std.png"
         },
-        "15": {
+        {
+          "id": 15,
           "name": "Team Secret",
           "img": "http://wiki.teamliquid.net/commons/images/a/a7/Secretdotalogo_std.png"
         },
-        "16": {
+        {
+          "id": 16,
           "name": "SG e-sports",
           "img": "http://wiki.teamliquid.net/commons/images/2/2a/SG_e-sportslogo_std.png"
         }
-      },
+      ],
       "rounds": [
         {
           "name": "Round of 16",
