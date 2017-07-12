@@ -6,7 +6,6 @@
     rounds-header(:rounds="tournament.rounds")
     grid(
       :tournament="tournament"
-      :singleTeams="singleTeams"
       )
 </template>
 
@@ -29,26 +28,8 @@
       getTournament (id) {
         axios.get(`/api/bracket/${id}`)
         .then(response => {
-          console.log(id)
+          console.log(`Tournament ${id}`)
           this.tournament = response.data
-          this.getSingleTeams()
-        })
-      },
-      getSingleTeams () {
-        this.singleTeams = []
-        this.tournament.teams.filter(team => {
-          let check = false
-          this.tournament.rounds[0].matches.forEach(match => {
-            match.teams.forEach(eachTeam => {
-              if (eachTeam.id === team.id) {
-                check = true
-              }
-            })
-          })
-          if (check === false) {
-            this.singleTeams.push(team)
-            console.log(check, team.name)
-          }
         })
       }
     }

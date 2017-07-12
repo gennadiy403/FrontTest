@@ -1,6 +1,6 @@
 <template lang="pug">
   .rounds
-    .round(v-for="round in rounds") {{ round.name }}
+    .round-name(v-for="round in rounds") {{ round.name }}
 </template>
 
 <script>
